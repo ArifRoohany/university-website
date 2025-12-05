@@ -1,0 +1,134 @@
+/* ============ FOOTER ============ */
+.edu-footer {
+  background: #0d1b2a;
+  color: #e0e5eb;
+  padding: 60px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* ==== Column Titles ==== */
+.footer-col h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212EA0;
+}
+
+.footer-about {
+  line-height: 1.6;
+  margin: 15px 0;
+  color: #cbd5e1;
+}
+
+/* ==== Links ==== */
+.footer-links {
+  padding: 0;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #212EA0;
+  padding-left: 5px;
+}
+
+/* ==== Social Icons ==== */
+.footer-socials a {
+  margin-right: 12px;
+  font-size: 18px;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #212EA0;
+}
+
+/* ==== Contact ==== */
+.footer-contact {
+  margin-bottom: 10px;
+  color: #cbd5e1;
+}
+
+/* ==== Bottom Bar ==== */
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 30px;
+  border-top: 1px solid #1b263b;
+  color: #9aa5b1;
+  font-size: 15px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 500px) {
+ 
+  .footer-logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-socials {
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+
+  
+  .footer-container {
+    text-align: center;       /* centers all text */
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers the items */
+  }
+
+  .footer-links a {
+    display: inline-block;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-socials {
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+}

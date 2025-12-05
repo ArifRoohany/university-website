@@ -1,0 +1,71 @@
+.goTop {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(#0044ff 0%, #ddd 0%);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.goTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.insideCircle {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0044ff;
+}
+
+/* Hover Effect */
+.goTop:hover {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .goTop {
+    height: 55px;
+    width: 55px;
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .insideCircle {
+    height: 42px;
+    width: 42px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .goTop {
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .insideCircle {
+    height: 38px;
+    width: 38px;
+    font-size: 12px;
+  }
+}

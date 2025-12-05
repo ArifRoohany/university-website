@@ -1,0 +1,50 @@
+.campus {
+    text-align: center;
+    margin: 80px auto;
+    width: 90%;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 23%;
+    border-radius: 10px;
+}
+
+/* ===================================== */
+/*              RESPONSIVE               */
+/* ===================================== */
+
+/* Tablets (900px and below) */
+@media (max-width: 900px) {
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery img {
+        width: 45%;   /* 2 images per row */
+    }
+}
+
+/* Mobile Screens (600px and below) */
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%;   /* 1 image per row */
+    }
+
+    .campus {
+        margin: 60px auto;
+    }
+
+    .btn.dark-btn img {
+        width: 20px;
+    }
+}

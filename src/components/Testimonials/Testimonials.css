@@ -1,0 +1,100 @@
+.testimonials-section {
+  width: 100%;
+  padding: 40px 0;
+  /* background: #f8f9fd; */
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Card */
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Header */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4d7cff;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+.student-uni {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #666;
+}
+
+.student-country {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Review Paragraph */
+.student-review {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Add spacing for pagination */
+.testimonials-swiper {
+  padding-bottom: 50px;
+}
+
+/* Move pagination outside the slider */
+.testimonials-section .swiper-pagination {
+  bottom: -15px !important;
+  position: relative !important;
+  margin-top: 20px;
+}
+
+/* Style bullets */
+.swiper-pagination-bullet {
+  background: #4d7cff !important;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 22px;
+  border-radius: 8px;
+  transition: 0.3s;
+}

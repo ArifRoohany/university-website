@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR MAIN */
+.navbar {
+  width: 100%;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: 0.4s;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.nav-logo {
+  width: 180px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  transition: 0.4s ease;
+}
+
+.nav-links li {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ==== Hover & Active underline (only for non-button links) ==== */
+.nav-links li a:not(.btn) {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-links li a:not(.btn):hover {
+  color: #ffd700; /* Hover color */
+}
+
+.nav-links li a:not(.btn)::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffd700; /* underline color */
+  transition: 0.3s;
+}
+
+.nav-links li a:not(.btn):hover::after {
+  width: 100%;
+}
+
+/* Active link underline for non-button links */
+.nav-links li a.active:not(.btn) {
+  color: #ffd700;
+}
+
+.nav-links li a.active:not(.btn)::after {
+  width: 100%;
+}
+
+/* DARK NAV WHEN SCROLL */
+.dark-nav {
+  background: #212EA0;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* ============= HAMBURGER ICON ============= */
+.menu-icon {
+  width: 32px;
+  height: 26px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-icon .bar {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+/* X Animation */
+.menu-icon .bar:nth-child(1).active {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu-icon .bar:nth-child(2).active {
+  opacity: 0;
+}
+
+.menu-icon .bar:nth-child(3).active {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ============= MOBILE MENU ============= */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background: #212EA0;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 260px;
+    gap: 30px;
+    transition: 0.4s;
+  }
+
+  .nav-links li {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+}
+
+/* RESPONSIVE LOGO & BUTTON FONT */
+@media (max-width: 500px) {
+  .nav-logo {
+    width: 150px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
